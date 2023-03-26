@@ -1,0 +1,14 @@
+name: Hello-xxx
+
+on: [push]
+
+jobs:
+ run-simple-command:
+  runs-on: ubuntu-latest
+  steps:
+    - name: echo string "Hello"
+      run: echo "Hello"
+    - name: check node version
+      run: 
+       node -v
+       npm -v
